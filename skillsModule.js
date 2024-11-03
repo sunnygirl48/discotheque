@@ -22,6 +22,8 @@ startButton.innerText = "Start Disco";
 startButton.style.padding = "10px 20px";
 startButton.style.fontSize = "16px";
 startButton.style.cursor = "pointer";
+startButton.style.border = "none";
+startButton.style.borderRadius = "10px";
 startButton.onclick = startDisco;
 document.body.appendChild(startButton);
 
@@ -30,5 +32,7 @@ stopButton.innerText = "Stop Disco";
 stopButton.style.padding = "10px 20px";
 stopButton.style.fontSize = "16px";
 stopButton.style.cursor = "pointer";
+stopButton.style.border = "none";
+stopButton.style.borderRadius = "10px";
 stopButton.onclick = stopDisco;
 document.body.appendChild(stopButton);
