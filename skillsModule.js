@@ -1,9 +1,11 @@
 let discoInterval;
+const audio = new Audio('discotheque.mp3'); 
 
 // startDisco() 
 function startDisco() {
     if (discoInterval) clearInterval(discoInterval);
-    
+    audio.play(); // Start playing the music
+
     // Color intervals
     discoInterval = setInterval(() => {
         const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
@@ -14,6 +16,8 @@ function startDisco() {
 // stopDisco() 
 function stopDisco() {
     clearInterval(discoInterval);
+    audio.pause(); // Stop the music
+    audio.currentTime = 0; // Reset the audio to the beginning
 }
 
 // "Start Disco" and "Stop Disco" buttons
